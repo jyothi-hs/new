@@ -1,0 +1,13 @@
+---
+
+- hosts: web
+
+  name: WebServer Setup
+
+  become: yes
+
+  tasks:
+
+  - name: Installing Apache2 Packages 
+
+    yum: name=httpd state=present
